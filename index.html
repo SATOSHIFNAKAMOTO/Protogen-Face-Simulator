@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protogen Face Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="instructions">
+        <h1>Protogen Face Simulator</h1>
+        <p>
+            Welcome to the Protogen Face Simulator! Follow the instructions below to create and interact with your Protogen face:
+        </p>
+        <ul>
+            <li><strong>Draw on the Canvas:</strong> Click on the LED matrix panels to toggle the LEDs on and off.</li>
+            <li><strong>Clear the Panels:</strong> Click the <em>Clear</em> button to reset all the panels.</li>
+            <li><strong>Export Configuration:</strong> Click the <em>Export</em> button to generate the Arduino code for the current configuration and copy it to your clipboard.</li>
+        </ul>
+    </div>
+    <div id="simulator">
+        <canvas id="protogenCanvas"></canvas>
+        <div id="controls">
+            <button id="clearBtn">Clear</button>
+            <button id="exportBtn">Export</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
